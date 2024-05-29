@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+    <link rel="icon"  href="logos/logo_web.png">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main_video">
+            <div class="video ">
+                <video src=""  controls muted autoplay></video>
+                <p class="title">coming_soon</p>
+            </div>
+            
+        </div>
+        <div class="video_list">
+            <div class="vid active">
+                <video src=""  controls muted autoplay></video>
+                <p class="title">coming soon</p>
+            </div>
+            <div class="vid">
+                <video   controls ></video>
+                <p class="title">Coming Soon</p>
+            </div>
+    
+     
+            <div class="vid">
+                <video   controls></video>
+                <p class="title">Coming Soon</p>
+            </div>
+
+            
+            <div class="vid">
+                <video   controls></video>
+                <p class="title">Coming Soon</p>
+            </div>
+
+            
+            <div class="vid">
+                <video   controls></video>
+                <p class="title">Coming Soon</p>
+            </div>
+
+            
+            <div class="vid">
+                <video   controls></video>
+                <p class="title">Coming Soon</p>
+            </div>
+
+            
+            <div class="vid">
+                <video   controls></video>
+                <p class="title">Coming Soon</p>
+            </div>
+            
+            <div class="vid">
+                <video   controls></video>
+                <p class="title">Coming Soon</p>
+            </div>
+    
+    </div>
+
+
+    <script>
+        let  listVideo= document.querySelectorAll('.video_list .vid');
+        let mainVideo= document.querySelector('.main_video video');
+        let title= document.querySelector('.main_video .title');
+        
+
+        listVideo.forEach(video=>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML
+                    title.innerHTML=text;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

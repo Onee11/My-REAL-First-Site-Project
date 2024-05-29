@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Video.css">
+    <link rel="icon"  href="logos/logo_web.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main_video">
+            <div class="video ">
+                <video src="Videos/css1.mp4"   controls muted autoplay></video>
+                <p class="title">Borders </p>
+            </div>
+        </div>
+        <div class="video_list">
+            <div class="vid active">
+                <video src="Videos/css1.mp4"  controls></video>
+                <p class="title">Borders</p>
+            </div>
+            <div class="vid">
+                <video src="Videos/css2.mp4"   controls ></video>
+                <p class="title">Overflow Explained</p>
+            </div>
+    
+     
+            <div class="vid">
+                <video src="Videos/css3.mp4"  controls></video>
+                <p class="title">Opacity</p>
+            </div>
+    
+      
+            <div class="vid">
+                <video src="Videos/css4.mp4"  controls></video>
+                <p class="title">Basic Selectors</p>
+            </div>
+
+            <div class="vid">
+                <video src="Videos/css5.mp4"  controls></video>
+                <p class="title">Transitions</p>
+            </div>
+
+            <div class="vid">
+                <video src="Videos/css6.mp4"  controls></video>
+                <p class="title">Gradient Colors</p>
+            </div>
+
+    </div>
+
+
+    <script>
+        let  listVideo= document.querySelectorAll('.video_list .vid');
+        let mainVideo= document.querySelector('.main_video video');
+        let title= document.querySelector('.main_video .title');
+        
+
+        listVideo.forEach(video=>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML
+                    title.innerHTML=text;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

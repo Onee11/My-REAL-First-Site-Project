@@ -1,0 +1,29 @@
+html,body{
+    height:100%;
+}
+#racine_page
+{
+
+position:absolute;
+height:100%;
+width:100%;
+margin:0px;
+margin-left:0px;
+padding:0px;
+background-color:black;
+border:2px solid red;
+
+}
+
+#login_page{
+    position:absolute;
+    padding:0px ;
+    background-color:white;
+    height:250px;
+    width:600px;
+    top:580px;
+    left:800px;
+    border-radius:18px;
+
+
+}

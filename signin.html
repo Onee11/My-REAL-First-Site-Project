@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <title>Sign up </title>
+    <link rel="icon"  href="logos/logo_web.png">
+</head>
+<body>
+    
+    
+
+
+<div id="main">
+<div id="logo_sign">
+    <a  href="index.html"><img src="Logos/black_logo.png" alt="logo"></a>
+</div>
+
+
+
+
+<div id="vertical_line">
+</div>
+<div id="divsing">
+<div id="sign_in">
+    <p id="ppkk">Sign Up</p>
+    </div>
+<div id="signin">
+    <form action="">
+    	
+       <div id="nom"> 
+        
+        <p>Family Name :</p>
+        
+        <input id="nomin" type="text" name="nom" required placeholder="insert ur name" maxlength="20"> </input>
+        <p> First Name :</p>
+        <input id="prenom" type="text"   name="prenom" required placeholder="insert ur first name" maxlength="20"></input>
+        </div>
+
+       <div id="mail">
+        <p> Email Address : </p>
+        <input id="mailin" type="email" name="email" required placeholder="type ur email " ></input>
+       </div>
+
+       <div id="pass">
+         <p> Password : </p>
+         <input id="password" type="password"  name="mail" required placeholder="choose a password" ></input> 
+        <img class="eye" src="Logos/hide.png" alt="hide" id="eye">
+         
+       </div>
+        
+       <input id="submit" type="submit" value="Sign Up" ></input>
+     
+    
+    
+      
+
+    </form>
+      </div>
+        </div>
+
+
+    
+<!--------------------------  FORGOT PASSWORD   ---------------------->
+
+<div id="divfp"><h2 id="forp">Forgot Password ?</h2>
+
+<div class="container">
+    <form>
+        <h3><label for="email">Email:</label></h3>
+        <input type="email" id="email" name="email" placeholder="insert an existing account's email" required>
+        <button id="cgbutton"   type="submit">Reset Password</button>
+    </form>
+</div>
+</div>
+    
+
+
+
+</div>
+
+
+<script>
+
+    let eye = document.getElementById("eye");
+    let password = document.getElementById("password");
+
+
+
+    eye.onclick = function(){
+        if(password.type == "password"){
+            password.type = "text";
+            eye.src = "logos/show.png";
+        }else{
+            password.type = "password";
+            eye.src = "logos/hide.png";
+        }
+    }
+
+</script>
+
+
+</body>
+<html>

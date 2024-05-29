@@ -1,0 +1,576 @@
+
+
+body {
+  height:340vh;
+  width:100vw;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  word-spacing: 1.4px;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(#a1c4fd,#c2e9fb);
+  color: hsl(224, 44%, 5%);
+  overflow-x:hidden;
+}
+
+.main{
+  height:200%;
+  width:100%;
+}
+h1 {
+  font-size: 3rem;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius:2px solid green;
+  padding:0px;
+  position:relative;
+  top:250px;
+  left:22%;
+  width:800px;
+  display: grid;
+  grid-template-columns:repeat(4 ,1fr);
+  grid-template-rows:repeat(3,1fr);
+  gap: 1em;
+  padding-right:0;
+  z-index: 1;
+}
+.ktba{
+  position: absolute;
+  top:-90px;
+  font-size: 24px;
+  z-index: -1;
+  font-weight: 600;
+  
+}
+.zawj{
+  border: #000000 1px solid;
+  position:absolute;
+  height: 750px;
+  width:905px;
+  left:18%;
+  top:150px;
+  background-color: #f1f5f9;
+  z-index: 0;
+}
+.botona{
+  position: absolute;
+  top:-60px;
+  left: 200px;
+  font-size: 18px;
+  z-index: -1;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px rgb(148, 148, 148);
+  padding: 5px 4px;
+  margin: 0 0 16px;
+  cursor: pointer;
+}
+
+.botona2{
+  position: absolute;
+  top:-60px;
+  left: 300px;
+  font-size: 18px;
+  z-index: -1;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px rgb(148, 148, 148);
+  padding: 5px 4px;
+  margin: 0 0 16px;
+  cursor: pointer;
+}
+.botona:active,.botona:focus{
+  border-bottom: solid 4px rgb(105, 2, 195);
+}
+
+#progresss{
+  display: none;
+  
+  position:absolute;
+  height: 650px;
+  width:850px;
+  left:-5%;
+  top:-10px;
+  background-color: #f1f5f9;
+  z-index: 0;
+  font-size: 60px;
+  text-align: center;
+}
+#progresss p{
+  margin-top: 200px;
+}
+
+
+.item {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #f1f5f9;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition:transform 0.3s ease,box-shadow 0.4s ease;
+  z-index:3;
+}
+.item:hover {
+  transform: translateY(-60px) scale(1.5);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item-1 {
+  background-color: hsl(0, 59%, 41%);
+  background-image: url('Logos/csstutorial.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.item-2 {
+  background-color:rgb(255, 115, 0);
+  background-image: url('Logos/htmltut.png');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-3 {
+  background-color:hsl(45, 76%, 59%);
+  background-image: url('Logos/jstut.png');
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-4 {
+  background-color: #000000;
+  background-image: url('Logos/javatut.png');
+  background-size: 180px ;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-5 {
+  background-color:hsl(271, 92%, 63%);
+  background-image: url('Logos/phptut.png');
+  background-size: 380px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-6 {
+  background-color: rgb(11, 246, 246);
+  background-image: url('Logos/ctut.png');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-7 {
+  background-color:rgb(120, 255, 93);
+  background-image: url('Logos/cptut.png');
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-8 {
+  background-color: hsl(266, 93%, 43%);
+  background-image: url('Logos/cstut.png');
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-9 {
+  background-color: hsl(0, 100%, 50%);
+  background-image: url('Logos/pythontut.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.item-10 {
+  background-color: hsl(217, 70%, 47%);
+  background-image: url('Logos/sqltut.png');
+  background-size: 405px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+.item-11 {
+  background-color: hsl(331, 91%, 48%);
+  background-image: url('Logos/rubytut.png');
+  background-size: 400px ;
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+.item-12 {
+background-color: black;
+background-image: url('Logos/luatut.png');
+  background-size: 270px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.navbar ul{
+background-color:gray;
+list-style-type:none;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+
+}
+
+.navbar li{
+float:left;
+margin:10px;
+padding:8px;
+
+}
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:1.5rem
+}
+
+
+/*-------------------ali------------------*/
+
+.inline-box{
+  position: fixed;
+  padding: 25px 13px;
+  background-color: rgba(0,0,0,0.7);
+  backdrop-filter:blur(7.5px);
+  height: 50px;
+  width: 100%;
+  z-index:2;
+}
+.inline-box ul, .inline-box li{
+    margin: 0;
+    padding: 0;
+  }
+  .inline-box ul{
+    background: transparent;
+    backdrop-filter:blur(7.5px);
+    list-style: none;
+    width: 100%;
+    
+  }
+  .inline-box li{
+    float: left;
+    position: relative;
+    width: auto;
+    backdrop-filter:blur(7.5px);
+  }
+  .inline-box a{
+    padding: 20px 40px 20px 10px;
+  font-family:  'Segoe UI';
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 17px;
+  text-align: left;
+  text-decoration: none;
+  backdrop-filter:blur(7.5px);
+  }
+  .inline-box li:hover a{backdrop-filter:blur(7.5px);
+  }
+  #a1{Border-radius: 10px 10px 0px 0px;}
+  #a2{Border-radius: 0px 0px 10px 10px;}
+  #submenu{
+    backdrop-filter:blur(7.5px);
+    left:0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+ li:hover ul#submenu{
+  Border-radius: 17px;
+  opacity: 1;
+  top: 60px;
+  visibility: visible;
+  width:150px;
+ }
+#submenu li{
+  
+ 
+  width: 100%;
+}
+#submenu a:hover{
+  background: rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+#submenu a{
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition:transform 0.7s ease;
+}
+#aa2{height:17px;}
+#aa1{ 
+  height:15px;
+}
+#submenu{
+  white-space: nowrap;
+}
+#Cyperpic{
+   height: 20px;
+   -ms-flex-item-align: center;
+}
+a#picopic
+{
+
+  padding: 30;
+  padding-left: 100px;
+}
+
+/*------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------about us---------------------*/
+
+#aboutusp{
+  position: absolute;
+  background-color: rgb(8, 8, 8);
+  font-size: 25px;
+  left:0px;
+  height:80px;
+  width: 240px;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:1000px;
+  /*top: 1000px;*/
+  color:grey;
+ 
+ 
+}
+
+#hiddentxt{
+  display:none;
+  position:absolute;
+  background-color:rgb(56, 56, 56);
+  font-size: 20px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  top:990px;
+  left:250px;
+  width: 500px;
+  padding:15px;
+  z-index:10;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  transition: backdrop-filter 0.5s ease;
+}
+
+#aboutus:hover #hiddentxt{
+  display: block;
+  
+}
+
+
+
+
+
+/*---------------------------MEET THE TEAM--------------------*/
+
+
+#meet{
+  position: absolute;
+  background-color: rgb(8, 8, 8);
+  font-size: 25px;
+  left:0px;
+  height:80px;
+  width: 240px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color:grey;
+  border-radius:0px 20px 0 0px;
+  top:1100px;
+}
+
+.team{
+  position:relative;
+  /*hna mahfoud*/
+  top:573px;
+  
+  width:100%;
+  height:100%;
+  max-width:100%;
+  min-height: 100vh;
+  background-image:linear-gradient(rgba(17, 55, 159, 0.6),rgba(53, 95, 233, 0.6)),url(white-Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:1;
+
+
+}
+
+
+
+.container3{
+  max-width:80%;
+  min-height:80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:3rem 1rem;
+  margin:0 auto;
+
+  
+
+}
+
+
+
+.memebers{
+  width:100%;
+  min-height:calc(80vh/6);
+  border-bottom: 1px solid #000000;
+  /*#4f796e*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin:.5rem auto;
+  transition:transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.memebers:hover{
+  transform: translate(40px);
+}
+
+#memebers-right{
+  flex-direction: row-reverse;
+  transition:transform 0.2s ease-in-out;
+
+}
+#memebers-right:hover{
+  transform: translate(-40px);
+
+}
+.memebers img{
+  /*
+  width:20dvw;
+  height:20dvw; */
+  width:300PX;
+  height:300PX;
+
+  object-fit: cover;
+  
+  margin:1rem;
+  border: 10PX solid #639ac4;
+  /*#698f85*/
+  border-radius: 50%;
+  
+
+}
+
+
+.info2{
+  padding:0 2rem;
+  transition:text-shadow 0.4s ease;
+}
+
+
+.info2 ul li{
+  font-size:20PX;
+  color:#e6e9e9;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin:2px auto;
+
+}
+
+
+.info2 h3{
+  text-transform: uppercase;
+  font-size:30PX;
+  color: #fff;
+  transform: translateY(-15px);
+text-shadow:
+    0 0 7px #fff,
+    0 0 20px #0fa;
+
+}
+
+.maincontainer{
+  position:relative;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:15px;
+}
+
+.info2 > p{
+  /*animation: glow 5s ease-in-out infinite; */
+  animation: up 6s ease-in-out infinite;
+  font-size:30PX;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0px;
+  color: #e6e9e9;
+}
+
+@keyframes up{
+  0%, 100%{
+    transform: translateY(-15px);
+    text-shadow:0 10px 5px rgba(0, 0, 0,0.5);
+  }
+  10%,90%{
+    
+    transform: none;
+    text-shadow:none;
+  }
+}
+
+.info2 > p:nth-child(2){
+  animation-delay: 0.25s;
+}
+
+.info2 > p:nth-child(3){
+  animation-delay: 0.5s;
+}
+.info2 > p:nth-child(4){
+  animation-delay: 0.75s;
+}
+
+.info2 > p:nth-child(5){
+  animation-delay: 1s;
+}
+.info2 > p:nth-child(6){
+  animation-delay: 1.25s;
+}
+.info2 > p:nth-child(7){
+  animation-delay: 1.5s;
+}
+.info2 > p:nth-child(8){
+  animation-delay: 1.75s;
+}
